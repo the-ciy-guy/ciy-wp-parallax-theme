@@ -563,7 +563,17 @@ footer {
 .footer__social a:hover {
     font-size: 2.5rem;
 }
+/* Media Queries */
+@media(max-width: 1229px){
+    /* Restaurant Section */
+    .section__restaurants {
+        height: unset;
+    }
 
+    .restaurants {
+        display: block;
+    }
+}
 @media(max-width: 1024px){
     .navbar__nav {
         display: none;
@@ -588,6 +598,93 @@ footer {
 
     .header__main-text h1 {
         font-size: 2rem;
+    }
+
+    /* Sections */
+    .section {
+        text-align: justify;
+        padding: 50px 30px;
+    }
+
+    /* Text Section */
+    .section__text p {
+        letter-spacing: 1px;
+        line-height: 20px;;
+    }
+
+    /* Restaurant Section */
+    .restaurants {
+        display: block;
+        padding: 0;
+    }
+
+    .restaurants p {
+        padding-bottom: 20px;
+    }
+
+    .section__restaurants {
+        height: unset;
+    }
+
+    /* Event Section */
+    .section__events h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .news__boxes {
+        margin: 0;
+        border: none;
+    }
+
+    .news__front {
+        display: block;
+    }
+
+    a.button__posts {
+        font-size: 16px;
+        text-align: center;
+        width: auto;
+        display: block;
+    }
+
+    /* Section Pages */
+    .section__pages {
+        display: block;
+    }
+
+    .pages__left {
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .pages__right {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Event Pages */
+    .section__pagination {
+        text-align: center;
+    }
+
+    /* Contact Form */
+    .wpcf7-form input, .wpcf7-form textarea {
+        width: 90%;
+    }
+
+    .wpcf7-form-control.wpcf7-submit {
+        width: 95%;
+    }
+
+    /* Booking Form */
+    .rtb-booking-form input {
+        width: 90% !important;
+    }
+
+    .rtb-booking-form textarea {
+        height: 200px;
     }
 
     /* Footer */
